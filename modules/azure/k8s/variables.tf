@@ -59,3 +59,8 @@ variable "deploy_elasticsearch_azure_k8s" {
   description = "Deploy Elasticsearch inside AKS"
 }
 
+variable "deploy_cassandra_azure_k8s" {
+  description = "Deploy Cassandra on Azure AKS"
+  type        = bool
+}
+

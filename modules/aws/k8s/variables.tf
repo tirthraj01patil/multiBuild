@@ -92,3 +92,26 @@ variable "deploy_elasticsearch_aws_k8s" {
   type        = bool
 }
 
+variable "deploy_cassandra_aws_k8s" {
+  description = "Deploy Cassandra on AWS EKS"
+  type        = bool
+}
+
+# GitHub repository credentials for AWS
+variable "github_repository_url_aws" {
+  description = "GitHub repository URL for AWS ArgoCD"
+  type        = string
+  default     = "https://github.com/example/aws-repo.git"
+}
+
+variable "github_username_aws" {
+  description = "GitHub username for AWS ArgoCD"
+  type        = string
+  default     = "aws-user"
+}
+
+variable "github_token_aws" {
+  description = "GitHub token for AWS ArgoCD"
+  type        = string
+  default     = "aws-secret-token"
+}

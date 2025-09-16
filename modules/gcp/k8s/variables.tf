@@ -62,6 +62,11 @@ variable "deploy_elasticsearch_gcp_k8s" {
 
 }
 
+variable "deploy_cassandra_gcp_k8s" {
+  description = "Deploy Cassandra on GCP GKE"
+  type        = bool
+}
+
 
 variable "github_repository_url_gcp" {
   type        = string

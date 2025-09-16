@@ -28,6 +28,7 @@ deploy_rabbitmq_aws_k8s = true
 deploy_neo4j_aws_k8s    = true
 deploy_argocd_aws_k8s   = true
 deploy_elasticsearch_aws_k8s= true
+deploy_cassandra_aws_k8s    = true
 
 
 # Azure
@@ -47,6 +48,7 @@ deploy_rabbitmq_azure_k8s      = true
 deploy_neo4j_azure_k8s         = true
 deploy_argocd_azure_k8s        = true
 deploy_elasticsearch_azure_k8s = true
+deploy_cassandra_azure_k8s     = true
 
 
 # GCP
@@ -63,6 +65,7 @@ deploy_rabbitmq_gcp_k8s = true
 deploy_neo4j_gcp_k8s    = true
 deploy_argocd_gcp_k8s       = true
 deploy_elasticsearch_gcp_k8s = true
+deploy_cassandra_gcp_k8s     = true
 
 
 #=============================================================

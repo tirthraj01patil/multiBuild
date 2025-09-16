@@ -4,7 +4,7 @@ resource "kubernetes_namespace" "cassandra" {
     name = "cassandra"
   }
 
-  depends_on = [kubernetes_annotations.disable_gp2]
+  depends_on = [kubernetes_annotations.disable_azure_default]
 }
 
 
@@ -18,7 +18,7 @@ resource "random_password" "cassandra" {
 
 # Helm release for Cassandra
 resource "helm_release" "cassandra" {
-  count      = var.deploy_cassandra_aws_k8s ? 1 : 0
+  count      = var.deploy_cassandra_azure_k8s ? 1 : 0
   name       = "cassandra"
   namespace  = kubernetes_namespace.cassandra.metadata[0].name
   repository = "https://charts.bitnami.com/bitnami"
